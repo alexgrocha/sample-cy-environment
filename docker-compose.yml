@@ -1,7 +1,9 @@
 # arquivo docker compose para subir a demo da loja EBAC
 # para subir a aplicação execute `docker-compose up -d`
 # para parar a aplicação execute `docker-compose down`
-version: "3.9"
+# 11/12/23 -- foi necessário alterar a versão de 3.9 para 3.3 da minha maquina
+# alterado tbm a porta de 80 para 88, porém não funciona
+version: "3.3"
     
 services:
   wp_db:
@@ -11,4 +13,4 @@ services:
       - wp_db
     image: ernestosbarbosa/lojaebac
     ports:
-      - "80:80"
+      - "88:88"

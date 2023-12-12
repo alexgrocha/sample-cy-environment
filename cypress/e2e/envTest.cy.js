@@ -3,7 +3,7 @@
 describe('Environment Variables', () => {
 
   before(()=>{
-    cy.fixture(`${Cypress.env('MY_ENV')}/data.json`).then(data=>{
+    cy.fixture(`${Cypress.env('env')}/data.json`).then(data=>{
       cy.log(data)
     })
   })

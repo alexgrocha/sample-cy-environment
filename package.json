@@ -1,0 +1,18 @@
+{
+  "name": "sample-cy-environment",
+  "version": "1.0.0",
+  "description": "Exemplos de configuração para execução em múltiplos ambientes",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run",
+    "testEnvCyOpen": "CYPRESS_HOST=http://localhost npx cypress open",
+    "testEnvCmdCyOpen": "npx cypress open --env HOST=http://localhost"
+  },
+  "author": "ernestosbarbosa",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^8.7.0",
+    "cypress-dotenv": "^2.0.0",
+    "dotenv": "^10.0.0"
+  }
+}
